@@ -1,0 +1,69 @@
+.tableContainer {
+  text-align: center; 
+  margin: 20px 0; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.tableTitle {
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+}
+
+.dataTable {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.dataTable th, .dataTable td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  text-align: center; 
+}
+
+.dataTable th {
+  background-color: #609FC2; 
+  color: white; 
+}
+
+.paginationButtons {
+  display: flex; 
+  justify-content: space-between; 
+  margin: 20px 0; 
+}
+
+.paginationButtons button {
+  padding: 10px 20px; 
+  background-color: #609FC2; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.paginationButtons button:hover {
+  background-color: #507BA8; 
+}
+
+.paginationButtons button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed; 
+}
+
+.downloadButton {
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  background-color: #609FC2; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+.downloadButton:hover {
+  background-color: #507BA8; 
+}

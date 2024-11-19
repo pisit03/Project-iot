@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.5); /* สีขาวจาง 50% */
+    background-blend-mode: overlay; /* ผสมภาพพื้นหลังและสี */
+    text-align: center;
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+  }
+  
+  .stationCard {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .stationCard:hover {
+    transform: scale(1.05); 
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+
+  .stationImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px; 
+  }
+  
+  h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  

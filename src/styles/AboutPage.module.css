@@ -1,0 +1,104 @@
+.container {
+    padding: 40px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.5); /* สีขาวจาง 50% */
+    background-blend-mode: overlay; /* ผสมภาพพื้นหลังและสี */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  h1, h2 {
+    color: #609fc2;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .gridItem {
+    text-align: center;
+  }
+  
+  .gridItem img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #609fc2;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  .gridItem img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+  }
+  .statusSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .statusItem {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .statusItem img {
+    width: 500px;
+    height: 80px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #609fc2;
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+  .statusItem img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .teamSection {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .teamSection p {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .teamSection img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #609fc2;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+  .teamSection img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+  }

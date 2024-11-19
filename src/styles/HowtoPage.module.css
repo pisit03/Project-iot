@@ -1,0 +1,132 @@
+.container {
+    padding: 40px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.5); /* สีขาวจาง 50% */
+    background-blend-mode: overlay; /* ผสมภาพพื้นหลังและสี */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container h1, h2 {
+    color: #E25845;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ตั้งค่าคอลัมน์เป็น 2 คอลัมน์ */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.gridItem {
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    border: 1px solid #609fc2; /* เพิ่มเส้นขอบ */
+    border-radius: 10px; /* ทำมุมให้โค้ง */
+    padding: 20px; /* เพิ่มระยะห่างภายในกล่อง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* เพิ่มอนิเมชัน */
+    height: 300px; /* กำหนดความสูงให้กล่องเท่ากัน */
+    overflow: hidden; /* ป้องกันไม่ให้ข้อความยืดออกนอกกล่อง */
+}
+
+.gridItem img {
+    width: 100%; /* ให้รูปภาพกว้างเต็มกล่อง */
+    max-width: 200px; /* กำหนดความกว้างสูงสุด */
+    height: auto; /* รักษาสัดส่วนภาพ */
+    border-radius: 10px; /* ทำมุมให้โค้ง */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของรูปภาพ */
+}
+
+.gridItem:hover {
+    transform: scale(1.05); /* ขยายกล่องเมื่อชี้เมาส์ */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อชี้เมาส์ */
+}
+
+
+.statusSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.statusItem {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.statusItem img {
+    width: 500px;
+    height: 80px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #609fc2;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.statusItem img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.teamSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.teamSection p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.teamSection img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #609fc2;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.teamSection img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.howtoIntro {
+    text-align: center; /* จัดข้อความและรูปภาพให้อยู่กลาง */
+    margin-bottom: 40px; /* ระยะห่างด้านล่าง */
+}
+
+.introImage {
+    width: 100%; /* กำหนดความกว้างเต็มที่ */
+    max-width: 300px; /* กำหนดความกว้างสูงสุด */
+    height: auto; /* รักษาสัดส่วนภาพ */
+    border-radius: 10px; /* ทำมุมให้โค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    margin: 20px auto; /* จัดกลาง */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* เพิ่มอนิเมชัน */
+}
+
+.introImage:hover {
+    transform: scale(1.1); /* ขยายรูปเมื่อชี้เมาส์ */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อชี้เมาส์ */
+}
